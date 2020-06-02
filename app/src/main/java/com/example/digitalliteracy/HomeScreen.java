@@ -13,7 +13,12 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.PopupWindow;
 
+import com.google.android.material.button.MaterialButton;
+
 public class HomeScreen extends AppCompatActivity {
+
+    private MaterialButton btProceed, btCancel;
+    private PopupWindow popupWindow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +53,7 @@ public class HomeScreen extends AppCompatActivity {
         });
     }
 
-    private PopupWindow popupWindow;
+
 
     public void showWelcomePopup(View view) {
 
@@ -73,6 +78,24 @@ public class HomeScreen extends AppCompatActivity {
             public boolean onTouch(View v, MotionEvent event) {
                 popupWindow.dismiss();
                 return true;
+            }
+        });
+
+
+        btCancel = popupView.findViewById(R.id.btCancelWelcome);
+        btProceed = popupView.findViewById(R.id.btProceedWelcome);
+
+        btProceed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openTopics(v);
+            }
+        });
+
+        btCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                closePopup(v);
             }
         });
     }

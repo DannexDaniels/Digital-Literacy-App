@@ -44,6 +44,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Topics"
+                android:textColor="#000"
                 android:textAppearance="?android:textAppearanceLarge"
                 android:textSize="30dp"
                 android:textStyle="bold"
@@ -69,27 +70,40 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:orientation="horizontal">
-                <ImageButton
+                <com.google.android.material.button.MaterialButton
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:layout_margin="5dp"/>
-                <ImageButton
+                    android:layout_margin="5dp"
+                    android:text="What is Business Digitization"
+                    android:textColor="@color/text2"
+                    app:backgroundTint="@color/text1"
+                    android:id="@+id/btTopic1"/>
+                <com.google.android.material.button.MaterialButton
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:layout_margin="5dp"/>
-                <ImageButton
+                    android:layout_margin="5dp"
+                    android:text="Types of Digitization"
+                    android:textColor="@color/text2"
+                    app:backgroundTint="@color/text1"
+                    android:id="@+id/btTopic2"/>
+                <com.google.android.material.button.MaterialButton
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:layout_margin="5dp"/>
+                    android:layout_margin="5dp"
+                    android:textColor="@color/text2"
+                    app:backgroundTint="@color/text1"
+                    android:text="Merits and Demerits of Digization"
+                    android:id="@+id/btTopic3"/>
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Tutorials"
+                android:textColor="#000"
                 android:textAppearance="?android:textAppearanceLarge"
                 android:textSize="30dp"
                 android:textStyle="bold"
@@ -138,6 +152,7 @@
                 android:text="Other Resources"
                 android:textAppearance="?android:textAppearanceLarge"
                 android:textSize="30dp"
+                android:textColor="#000"
                 android:textStyle="bold"
                 android:paddingLeft="30dp"/>
             <LinearLayout
