@@ -76,6 +76,7 @@
                     android:layout_weight="1"
                     android:layout_margin="5dp"
                     android:text="What is Business Digitization"
+                    android:textAppearance="?android:textAppearanceSmall"
                     android:textColor="@color/text2"
                     app:backgroundTint="@color/text1"
                     android:id="@+id/btTopic1"/>
@@ -85,6 +86,7 @@
                     android:layout_weight="1"
                     android:layout_margin="5dp"
                     android:text="Types of Digitization"
+                    android:textAppearance="?android:textAppearanceSmall"
                     android:textColor="@color/text2"
                     app:backgroundTint="@color/text1"
                     android:id="@+id/btTopic2"/>
@@ -96,6 +98,7 @@
                     android:textColor="@color/text2"
                     app:backgroundTint="@color/text1"
                     android:text="Merits and Demerits of Digization"
+                    android:textAppearance="?android:textAppearanceSmall"
                     android:id="@+id/btTopic3"/>
             </LinearLayout>
 
